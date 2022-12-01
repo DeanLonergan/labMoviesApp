@@ -6,31 +6,13 @@ import CardMedia from "@mui/material/CardMedia";
 import CardHeader from "@mui/material/CardHeader";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import img from '../../images/film-poster-placeholder.png';
 import { Link } from "react-router-dom";
-import Avatar from '@mui/material/Avatar';
-import { ActorsContext } from "../../contexts/actorsContext";
 
 export default function ActorCard({ actor, action }) {
-  const { favourites } = useContext(ActorsContext);
- 
-   if (favourites.find((id) => id === actor.id)) {
-     actor.favourite = true;
-   } else {
-     actor.favourite = false
-   }
-
    return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
-      avatar={
-        actor.favourite ? (
-          <Avatar sx={{ backgroundColor: 'green' }}>
-            <FavoriteIcon />
-          </Avatar>
-        ) : null
-      }
         title={
           <Typography variant="h5" component="p">
             {actor.name}{" "}
