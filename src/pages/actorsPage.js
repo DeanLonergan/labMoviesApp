@@ -5,7 +5,7 @@ import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
 
 const ActorsPage = (props) => {
-  const { data, error, isLoading, isError }  = useQuery('discover', getActors)
+  const { data, error, isLoading, isError }  = useQuery('discover-actors', getActors)
 
   if (isLoading) {
     return <Spinner />
