@@ -31,11 +31,6 @@ export default function MovieCard({ movie, action }) {
   } else {
     movie.mustWatch = false
   }
- 
-  //  const handleAddToFavourite = (e) => {
-  //    e.preventDefault();
-  //    addToFavourites(movie);
-  //  };
 
   return (
     <Card sx={{ maxWidth: 345 }}>
