@@ -10,17 +10,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import img from '../../images/film-poster-placeholder.png';
 import { Link } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
-import { ActorsContext } from "../../contexts/actorsContext";
 
 export default function ActorCard({ actor, action }) {
-  const { favourites } = useContext(ActorsContext);
- 
-   if (favourites.find((id) => id === actor.id)) {
-     actor.favourite = true;
-   } else {
-     actor.favourite = false
-   }
-
    return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader

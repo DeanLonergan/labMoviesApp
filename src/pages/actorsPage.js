@@ -3,7 +3,6 @@ import { getActors } from "../api/tmdb-api";
 import PageTemplate from '../components/templateActorListPage';
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
-import AddToFavouritesIcon from '../components/cardIcons/addToFavourites'
 
 const ActorsPage = (props) => {
   const { data, error, isLoading, isError }  = useQuery('discover', getActors)
@@ -22,9 +21,6 @@ const ActorsPage = (props) => {
     <PageTemplate
       title="Discover Actors"
       actors={actors}
-      action={(actor) => {
-        return <AddToFavouritesIcon actor={actor} />
-      }}
     />
   );
 };
