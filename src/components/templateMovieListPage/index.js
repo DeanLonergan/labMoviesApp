@@ -40,4 +40,5 @@ function MovieListPageTemplate({ movies, title, action }) {
     </Grid>
   );
 }
+
 export default MovieListPageTemplate;

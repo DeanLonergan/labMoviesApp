@@ -4,11 +4,11 @@ import Grid from "@mui/material/Grid";
 import ActorList from "../actorList";
 
 function ActorsListPageTemplate({ actors, title, action }) {
-  const [nameFilter, setNameFilter] = useState("");
+  const [nameFilter] = useState("");
 
   let displayedActors = actors
-    .filter((m) => {
-      return m.name.toLowerCase().search(nameFilter.toLowerCase()) !== -1;
+    .filter((a) => {
+      return a.name.toLowerCase().search(nameFilter.toLowerCase()) !== -1;
     });
 
   return (
