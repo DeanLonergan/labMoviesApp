@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
-import ActorDetails from "../components/ActorDetails";
-import PageTemplate from "../components/templateActorsPage";
-import { getActorsDetails } from '../api/tmdb-api'
+import ActorDetails from "../components/actorDetails";
+import PageTemplate from "../components/templateActorPage";
+import { getActor, getActors, getActorsDetails } from "../api/tmdb-api";
 import { useQuery } from "react-query";
 import Spinner from '../components/spinner'
 

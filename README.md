@@ -6,7 +6,9 @@ Name: Dean Lonergan
 
 ### New Pages.
 
++ Must watch movies page.
 + List of Actors.
++ Actor details.
 
 ### New Features.
 
@@ -19,7 +21,7 @@ N/A
 ## TMDB endpoints.
 
 + /movies/{movie_id}/reviews - The user reviews or a movie.
-+ /actors
++ /actors/{actor_id} - The actors details page.
 
 ## App Design.
 

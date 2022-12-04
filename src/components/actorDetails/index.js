@@ -12,38 +12,28 @@ const root = {
     margin: 0,
 };
 
-const ActorDetails = ({ actors }) => {
+const ActorDetails = ({ actor }) => {
 
   return (
     <>
       <Typography variant="h5" component="h3">
-        <b>Biography of {actors.name}</b>
+        <b>{actor.name}'s biography</b>
       </Typography>
 
       <Typography variant="h6" component="p">
-        {actors.biography}
+        {actor.biography}
       </Typography>
 
-      <Paper 
-        component="ul" 
-        sx={root}
-      >
-         <Chip
-         label={`${actors.popularity}`}
-        />
-        
-        <Chip
-         label={`${actors.birthday}`}
-        />
+      <Paper component="ul" sx={root} >
+        <li>
+        <Chip label={`With a popularity score of ${actor.popularity}, they are primarily known for ${actor.known_for_department}.`} />
+        </li>
+        </Paper>
 
-         <Chip
-         label={`${actors.place_of_birth}`}
-        />
-
-         <Chip
-         label={`${actors.known_for_department}`}
-        />
-
+        <Paper component="ul" sx={root} >
+        <li>
+        <Chip label={`Born on ${actor.birthday} in ${actor.place_of_birth}.`} />
+        </li>
         </Paper>
       </>
   );
