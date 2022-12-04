@@ -24,7 +24,8 @@ const TemplateActorsPage = ({ actor, children }) => {
 
   return (
     <>
-      <ActorHeader actors={actor} />
+      <ActorHeader actor={actor} />
+      
       <Grid container spacing={5} sx={{ padding: "15px" }}>
         <Grid item xs={3}>
           <div sx={{

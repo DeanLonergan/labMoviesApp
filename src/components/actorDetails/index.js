@@ -28,14 +28,14 @@ const ActorDetails = ({ actor }) => {
         <li>
         <Chip label={`With a popularity score of ${actor.popularity}, they are primarily known for ${actor.known_for_department}.`} />
         </li>
-        </Paper>
+      </Paper>
 
-        <Paper component="ul" sx={root} >
+      <Paper component="ul" sx={root} >
         <li>
         <Chip label={`Born on ${actor.birthday} in ${actor.place_of_birth}.`} />
         </li>
-        </Paper>
-      </>
+      </Paper>
+    </>
   );
 };
 
