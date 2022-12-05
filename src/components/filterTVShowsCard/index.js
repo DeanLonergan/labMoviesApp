@@ -53,7 +53,7 @@ export default function FilterTVShowsCard(props) {
     <Card 
       sx={{
         maxWidth: 345,
-        backgroundColor: "rgb(204, 204, 0)"
+        backgroundColor: "rgb(200, 200, 200)"
       }} 
       variant="outlined">
       <CardContent>
