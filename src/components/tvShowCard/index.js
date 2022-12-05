@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardHeader from "@mui/material/CardHeader";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import CalendarIcon from "@mui/icons-material/CalendarTodayTwoTone";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import WatchLaterIcon from "@mui/icons-material/Visibility";
 import StarRateIcon from "@mui/icons-material/StarRate";
@@ -61,6 +62,12 @@ export default function TVShowCard({ tvShow, action }) {
       />
       <CardContent>
         <Grid container>
+          <Grid item xs={6}>
+            <Typography variant="h6" component="p">
+              <CalendarIcon fontSize="small" />
+              {tvShow.first_air_date}
+            </Typography>
+          </Grid>
           <Grid item xs={6}>
             <Typography variant="h6" component="p">
               <StarRateIcon fontSize="small" />

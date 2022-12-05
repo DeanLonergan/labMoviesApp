@@ -1,5 +1,6 @@
 import React, { useContext  } from "react";
 import Card from "@mui/material/Card";
+import Grid from "@mui/material/Grid";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -46,6 +47,13 @@ export default function ActorCard({ actor, action }) {
         }
       />
       <CardContent>
+      <Grid container>
+        <Grid item xs={6}>
+          <Typography variant="h6" component="p">
+          {actor.gender === 1 ? "Female" : "Male"}
+          </Typography>
+        </Grid>
+        </Grid>
         <CardActions disableSpacing>
         {action(actor)}
           <Link to={`/actors/${actor.id}`}>
