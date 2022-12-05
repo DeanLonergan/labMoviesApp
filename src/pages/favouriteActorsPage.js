@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import PageTemplate from "../components/templateActorListPage";
 import { ActorsContext } from "../contexts/actorsContext";
 import { useQueries } from "react-query";
-import { getActors } from "../api/tmdb-api";
+import { getActorsDetails } from "../api/tmdb-api";
 import Spinner from '../components/spinner'
 import RemoveActorFromFavouritesIcon from "../components/cardIcons/removeActorFromFavourites";
 
@@ -12,8 +12,8 @@ const FavouriteActorsPage = () => {
   const favouriteActorQueries = useQueries(
     actorIds.map((actorId) => {
       return {
-        queryKey: ["person", { id: actorId }],
-        queryFn: getActors,
+        queryKey: ["actor", { id: actorId }],
+        queryFn: getActorsDetails,
       };
     })
   );
