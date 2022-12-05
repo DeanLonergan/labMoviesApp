@@ -9,19 +9,23 @@ Name: Dean Lonergan
 + Must watch movies page.
 + List of Actors.
 + Actor details.
++ List of TV Shows.
 
 ### New Features.
 
-+ Must watch movies avatar
++ Add to and remove from must watch movies (with custom avatar)
++ Favourite actors (with custom avatar)
++ Filter TV shows by name, genre.
 
 ## Setup requirements.
 
-N/A
+npm install, npm start.
 
 ## TMDB endpoints.
 
 + /movies/{movie_id}/reviews - The user reviews or a movie.
 + /actors/{actor_id} - The actors details page.
++ /tvshows/ - List of TV shows.
 
 ## App Design.
 
@@ -53,10 +57,8 @@ e.g.
 
 + /actors - displays a list of popular actors.
 + /actors/:id - shows details about a particular actor.
-+ /actors/:id/movies (protected) - an actor's movie credits.
-+ etc.
++ /tvshows - displays a list of tv shows.
 
-[If relevant, state what aspects of your app are protected/private (i.e. require authentication) and what is public.]
 
 ## Independent learning (If relevant).
 
