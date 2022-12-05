@@ -8,7 +8,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import WatchLaterIcon from "@mui/icons-material/Visibility";
-import CalendarIcon from "@mui/icons-material/CalendarTodayTwoTone";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import Grid from "@mui/material/Grid";
 import img from '../../images/film-poster-placeholder.png'

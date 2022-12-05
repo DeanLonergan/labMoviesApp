@@ -6,17 +6,18 @@ Name: Dean Lonergan
 
 ### New Pages.
 
-+ Must watch movies page.
 + List of Actors.
 + Actor details.
 + List of TV Shows.
 + TV Show details.
++ Favourite TV Shows.
 
 ### New Features.
 
-+ Add to and remove from must watch movies (with custom avatar)
-+ Favourite actors (with custom avatar)
++ Add Favourite actors (with custom avatar)
 + Filter TV shows by name, genre.
++ Add/remove favourite TV shows.
++ Filter favourite TV shows by name, genre.
 
 ## Setup requirements.
 
@@ -27,6 +28,8 @@ npm install, npm start.
 + /movies/{movie_id}/reviews - The user reviews or a movie.
 + /actors/{actor_id} - The actors details page.
 + /tvshows/ - List of TV shows.
++ /tvshows/{tvshow_id} - The TV Shows' details page.
++ /tvshows/favourites - List of favourited TV shows.
 
 ## App Design.
 
@@ -52,13 +55,11 @@ e.g.
 
 ### Routing.
 
-[ List the __new routes__ supported by your app and state the associated page.]
-
-e.g. 
-
 + /actors - displays a list of popular actors.
 + /actors/:id - shows details about a particular actor.
 + /tvshows - displays a list of tv shows.
++ /tvshows/:id - shows details about a particular tv show.
++ /tvshows/favourites - displays a list of favourited tv shows.
 
 
 ## Independent learning (If relevant).

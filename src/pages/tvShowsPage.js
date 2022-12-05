@@ -3,7 +3,7 @@ import { getTVShows } from "../api/tmdb-api";
 import PageTemplate from '../components/templateTVShowListPage';
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
-import AddToFavouritesIcon from '../components/cardIcons/addToFavourites'
+import AddToFavouritesIcon from '../components/cardIcons/addTVShowToFavourites'
 
 const TVShowsPage = (props) => {
   const { data, error, isLoading, isError }  = useQuery('discoverTVShows', getTVShows)
