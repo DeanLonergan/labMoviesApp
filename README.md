@@ -56,7 +56,7 @@ npm install, npm start.
 
 >Shows the full review for a movie.
 
-![ ](./images/tvshows.png)
+![ ](./src/images/tvshows.png)
 
 >Shows a list of popular TV shows.
 
