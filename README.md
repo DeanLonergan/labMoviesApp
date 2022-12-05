@@ -54,31 +54,31 @@ npm install, npm start.
 
 ![ ](./images/movie_reviews.PNG)
 
->Shows the full review for a movie.
+>Shows the reviews for a movie.
 
 ![ ](./images/tvshows.PNG)
 
->Shows a list of popular TV shows.
+>Shows a list of popular TV shows. Each card contains an image and two buttons, 'more info' opens a detailed page about the show, the heart adds the show to the users favourites.
 
 ![ ](./images/tvshow_details.PNG)
 
->Shows the details of a selected TV show.
+>Shows detailed information about a selected TV show.
 
 ![ ](./images/favourite_tvshows.PNG)
 
->Shows a list of a users favourited TV shows.
+>Shows a list of a users favourited TV shows. Each card contains a bin button, to delete the show from favourites.
 
 ![ ](./images/actors.PNG)
 
->Shows a list of popular actors.
+>Shows a list of popular actors. Each card contains an image and two buttons, 'more info' opens a biography page about the actor, the add person logo add the actor to the users favourites.
 
-![ ](./images/actors_details.PNG)
+![ ](./images/actor_details.PNG)
 
 >Shows the biography of a selected actor.
 
 ![ ](./images/favourite_actors.PNG)
 
->Shows a list of a users favourited actors.
+>Shows a list of a users favourited actors. Each card contains a bin button, to delete the actor from favourites.
 
 ### Routing.
 
