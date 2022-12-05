@@ -44,39 +44,39 @@ npm install, npm start.
 
 ### Component catalogue.
 
-![](./images/storybook.png)
+![](./images/storybook.PNG)
 
 ### UI Design.
 
-![ ](./images/movie_details.png)
+![ ](./images/movie_details.PNG)
 
 >Shows detailed information on a movie. Clicking the 'Reviews' floating action button will display extracts from critic reviews.
 
-![ ](./images/movie_reviews.png)
+![ ](./images/movie_reviews.PNG)
 
 >Shows the full review for a movie.
 
-![ ](./src/images/tvshows.png)
+![ ](./images/tvshows.PNG)
 
 >Shows a list of popular TV shows.
 
-![ ](./images/tvshow_details.png)
+![ ](./images/tvshow_details.PNG)
 
 >Shows the details of a selected TV show.
 
-![ ](./images/favourite_tvshows.png)
+![ ](./images/favourite_tvshows.PNG)
 
 >Shows a list of a users favourited TV shows.
 
-![ ](./images/actors.png)
+![ ](./images/actors.PNG)
 
 >Shows a list of popular actors.
 
-![ ](./images/actors_details.png)
+![ ](./images/actors_details.PNG)
 
 >Shows the biography of a selected actor.
 
-![ ](./images/favourite_actors.png)
+![ ](./images/favourite_actors.PNG)
 
 >Shows a list of a users favourited actors.
 
