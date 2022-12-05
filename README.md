@@ -10,6 +10,7 @@ Name: Dean Lonergan
 + List of Actors.
 + Actor details.
 + List of TV Shows.
++ TV Show details.
 
 ### New Features.
 
