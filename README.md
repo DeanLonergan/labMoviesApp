@@ -6,20 +6,21 @@ Name: Dean Lonergan
 
 ### New Pages.
 
-+ List of Actors.
++ List of Popular Actors.
 + Actor details.
++ Favourite actors.
 + List of TV Shows.
 + TV Show details.
 + Favourite TV Shows.
 
 ### New Features.
 
-+ Must watch shows custom avatar.
-+ Add Favourite actors (with custom avatar).
++ View actors details (biography, gender, dob, etc.)
++ Add/remove favourite actors (with custom avatar).
 + Filter actors by name.
++ View TV show details (genre, production countries, overview, etc.)
 + Filter TV shows by name, genre.
 + Add/remove favourite TV shows.
-+ Filter favourite TV shows by name, genre.
 
 ## Setup requirements.
 
@@ -27,43 +28,75 @@ npm install, npm start.
 
 ## TMDB endpoints.
 
-+ /movies/{movie_id}/reviews - The user reviews or a movie.
-+ /actors/{actor_id} - The actors details page.
-+ /tvshows/ - List of TV shows.
-+ /tvshows/{tvshow_id} - The TV Shows' details page.
++ /reviews/{movie_id} - The user reviews or a movie.
++ /movies/upcoming - List of upcoming movies,
++ /movies/favourites - List of favourited movies.
++ /movies/mustwatch - List of 'must watch' upcoming movies.
++ /movies/{movie_id} - A movies' details page.
++ /actors - List of popular actors.
++ /actors/{actor_id} - An actors details page.
++ /actors/favourites - List of favourited actors.
++ /tvshows - List of TV shows.
++ /tvshows/{tvshow_id} - A TV Shows' details page.
 + /tvshows/favourites - List of favourited TV shows.
 
 ## App Design.
 
 ### Component catalogue.
 
-[ Insert a screenshot from the Storybook UI, and highlight the stories that relate to your __new/modified components__ - see the example screenshot below.] .......
-
-e.g.
-
-![](./images/stories.png)
+![](./images/storybook.png)
 
 ### UI Design.
 
-[ Insert screenshots of the __new app pages__ you developed (including modified existing pages), Have an appropriate caption for each one (see example below).
-
-![ ](./images/detail.png)
+![ ](./images/movie_details.png)
 
 >Shows detailed information on a movie. Clicking the 'Reviews' floating action button will display extracts from critic reviews.
 
-![ ](./images/review.png)
+![ ](./images/movie_reviews.png)
 
 >Shows the full review for a movie.
 
+![ ](./images/tvshows.png)
+
+>Shows a list of popular TV shows.
+
+![ ](./images/tvshow_details.png)
+
+>Shows the details of a selected TV show.
+
+![ ](./images/favourite_tvshows.png)
+
+>Shows a list of a users favourited TV shows.
+
+![ ](./images/actors.png)
+
+>Shows a list of popular actors.
+
+![ ](./images/actors_details.png)
+
+>Shows the biography of a selected actor.
+
+![ ](./images/favourite_actors.png)
+
+>Shows a list of a users favourited actors.
+
 ### Routing.
 
-+ /actors - displays a list of popular actors.
-+ /actors/:id - shows details about a particular actor.
-+ /tvshows - displays a list of tv shows.
-+ /tvshows/:id - shows details about a particular tv show.
-+ /tvshows/favourites - displays a list of favourited tv shows.
++ /reviews/:id - Displays the reviews of a particular movie.
++ /movies/upcoming - Displays a list of upcoming movies.
++ /movies/favourites - Displays a list of favourited movies.
++ /movies/mustwatch - Displays a list of upcoming movies selected as 'must watch'.
++ /movies/:id - Displays a movies' details page based on it's ID.
++ /actors - Displays a list of popular actors.
++ /actors/:id - Displays an actors details page based on their ID.
++ /actors/favourites - Displays a List of favourited actors.
++ /tvshows - Displays a list of popular TV shows.
++ /tvshows/:id - Displays a TV Shows' details page based on it's ID.
++ /tvshows/favourites - Displays a list of favourited TV shows.
 
 
 ## Independent learning (If relevant).
 
-[ Itemize the technologies/techniques you researched independently and adopted in your project, i.e. aspects not covered in the lectures/labs. Mention the source code filenames that illustrate these  (code excerpts are not required) and provide references to the online resources that helped you (articles/blogs).
+I referred to the api extensively.
+https://developers.themoviedb.org/3/people/get-person-details
+https://developers.themoviedb.org/3/tv
