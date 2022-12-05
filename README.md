@@ -14,7 +14,9 @@ Name: Dean Lonergan
 
 ### New Features.
 
-+ Add Favourite actors (with custom avatar)
++ Must watch shows custom avatar.
++ Add Favourite actors (with custom avatar).
++ Filter actors by name.
 + Filter TV shows by name, genre.
 + Add/remove favourite TV shows.
 + Filter favourite TV shows by name, genre.
